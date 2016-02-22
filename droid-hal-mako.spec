@@ -8,4 +8,10 @@
 
 %define installable_zip 1
 
+# Add installed but unpackaged files
+%define straggler_files \
+/selinux_version\
+/service_contexts\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
